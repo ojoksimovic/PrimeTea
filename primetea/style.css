@@ -1,0 +1,1272 @@
+@media (min-width: 980px) {
+    html {
+    font-family: 'Raleway', sans-serif;
+    
+}
+header {
+    background-color: rgb(186, 54, 159);
+    position: fixed;
+    height: auto;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#logo {
+    float: left;
+    font-size: 2rem;
+    color: white;
+    width: auto;
+    padding: 10px 0 0 30px;
+
+}
+#logo a {
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+#mobile-nav {
+    display: none;
+    }
+    
+nav {
+    float: right;
+    width: auto;
+}
+
+li {
+    font-size: 1.5rem;
+    display: inline;
+}
+nav li a:hover {
+    background-color: rgba(255, 250, 240, 0.82);
+    color: #ba369f;
+}
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: 0.3s ease-out;
+}
+
+body, #content {
+    margin: 0;
+}
+
+.container {
+    float: left;
+    width: 100%;
+    height: 100vh;
+}
+#welcome {
+    background-image: url("pastelle-blended%20colours.jpg");
+    background-size: cover;
+    
+}
+
+
+.welcome-message-container {
+    float: left;
+    align-self: center;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 35%;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.16);
+    transition: 0.5s ease-out;
+}
+.welcome-message-container:hover {
+    background-color: rgba(255, 255, 255, 0.29);
+    
+}
+
+#about {
+    background-color: #f2ae72;
+}
+
+.about-content-container {
+    height: 75%;
+    width: 85vw;
+    margin: auto;
+    top: 10%;
+    position: relative;
+    background-image: linear-gradient(125deg, rgb(186, 54, 159), #f2ae72);
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+
+}
+.about-content-container:hover {
+    opacity: 1;
+}
+
+#together-container {
+    background-color: rgba(255, 255, 255, 0.46);
+    position: relative;
+    width: 850px;
+    height: 500px;
+    margin: auto;
+    top: 5%;
+    overflow: hidden;
+    
+}
+.about-content-container img {
+
+    width: 400px;
+    float: left;
+    margin: 20px 10px 0 20px;
+    transition: 0.2s ease-out;
+}
+
+
+.about-info-container {
+    position: relative;
+    width: 300px;
+    float: left;
+    margin: 20px 20px 0 20px;
+    height: auto;
+    padding: 25px;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.46);
+    transition: 0.2s ease-out;
+} 
+.about-info-container:hover {
+   background-color: rgba(255, 255, 255, 0.65);
+}
+#gallery {
+    background-color: #f2e394;
+    overflow: hidden;
+}
+
+#photo-container {
+    position: relative;
+    margin: 5% auto;
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    background-color: rgba(0, 0, 0, 0.16);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+    width: 85vw;
+    background-image: linear-gradient(125deg, rgba(186, 54, 159), #f7e378);
+}
+#photo-container:hover {
+    opacity: 1;
+}
+#photo-viewer {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.16);
+}
+#photo-viewer.is-loading:after {
+    content: "<i class="fas fa-spinner"></i>";
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#photo-viewer img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+}
+#thumbnails a.active {
+    opacity: 0.3;
+}
+#thumbnails a:hover {
+    opacity: 0.8;
+}
+#thumbnails {
+    position: relative;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 0;
+    overflow: hidden;
+}
+
+#menu {
+    background-color: #d96459;
+}
+
+#menu-container {
+    height: 75%;
+    width: 85vw;
+    margin: auto;
+    top: 10%;
+    position: relative;
+    background-image: linear-gradient(125deg, rgb(186, 54, 159), #d96459);
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+    align-items: center;
+}
+#menu-container:hover {
+    opacity:1;
+}
+
+#menu-header {
+    float: left;
+    position: relative;
+    left: 5%;
+    font-size: 2.3rem;
+    color: white;
+}
+
+#menu-form {
+    position: relative;
+    float: left;
+    top: 15%;
+    font-size: 1.2rem;
+}
+
+select{
+    position: relative;
+    float: left;
+    font-size: 1.5rem;
+    width: 250px;
+    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #484f4f;
+    color: white;
+    border: white 2px solid;
+}
+
+#menu-options-container {
+    top: 20%;
+    display:flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    position: relative;
+    float: left;
+    width: 80%;
+    font-size: 2.5rem;
+    overflow: auto;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.29);
+}
+
+.bubble-tea-image {
+    width: 100px;
+    height: 220px;
+    margin: 15px 15px 0 15px;
+    display: block;
+    transition: 0.2s ease-out;
+}
+.bubble-tea-image:hover {
+    transform: scale(1.05);
+}
+
+
+#location {
+    background-color: #484f4f;
+}
+#location-container {
+    height: 75%;
+    width: 85vw;
+    margin: auto;
+    top: 10%;
+    position: relative;
+    background-image: linear-gradient(125deg, rgb(186, 54, 159), #484f4f);
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+    align-items: center;
+}
+#location-container:hover {
+    opacity: 1;
+}
+#maps-container {
+    position: relative;
+    float: left;
+    top: 15%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.29);
+    padding: 20px;
+}
+
+#hours-container {
+    position: relative;
+    float: left;
+    left: 10%;
+    top: 15%;
+    color: white;
+    display: left;
+    width: 200px;
+    font-size: 1.2rem;
+}
+
+#map-text-container {
+    position: relative;
+    width: 1000px;
+    top: 10%;
+    margin: auto;
+}
+#contact {
+    background-color: #588c7e;
+}
+
+#contact-container {
+    height: 75%;
+    width: 85vw;
+    margin: auto;
+    top: 10%;
+    position: relative;
+    background-image: linear-gradient(125deg, rgb(186, 54, 159), #588c7e);
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+    align-items: center;
+}
+
+#contact-container:hover {
+    opacity:1;}
+
+#contact-header {
+    position: relative;
+    font-size: 3rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    top: 10%;
+}
+#logo-container {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+    top: 20%;
+    text-align: center;
+    font-size: 3rem;
+}
+#logo-container a {
+    padding: 0 5%;
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #484f4f;
+    color: white;
+}
+    
+    
+    #bubble-tea-description {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 2;
+        width: 400px;
+        height: 200px;
+        background-color: white;
+        opacity: 0.8;   
+    }
+    
+    #description-text {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 60px;
+    }
+    #close-description {
+        float: right;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+.menu-hidden {
+        display: none;
+    }
+.menu-visible {
+    display: block;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) and (max-width: 980px){
+    /* TABLET VIEW
+    */
+    
+      html, body {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+    
+    html {
+    font-family: 'Raleway', sans-serif;
+    
+}
+header {
+    background-color: rgb(186, 54, 159);
+    position: fixed;
+    height: auto;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#logo {
+    float: left;
+    font-size: 1.8rem;
+    color: white;
+    width: auto;
+    padding: 10px;
+
+}
+#logo a {
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    float: right;
+    width: auto;
+}
+
+#mobile-nav {
+    display: none;
+}
+        
+li {
+    font-size: 1.2rem;
+    display: inline;
+}
+nav li a:hover {
+    background-color: rgba(255, 250, 240, 0.82);
+    color: #ba369f;
+}
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 5px 15px 5px;
+    transition: 0.3s ease-out;
+}
+
+body, #content {
+    margin: 0;
+}
+
+.container {
+    float: left;
+    width: 100%;
+    height: 100vh;
+}
+#welcome {
+    background-image: url("https://i.ibb.co/sHsY77F/pastelle-blended-colours.jpg");
+    background-size: cover;
+    
+}
+
+
+.welcome-message-container {
+    float: left;
+    align-self: center;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.16);
+    transition: 0.5s ease-out;
+}
+.welcome-message-container:hover {
+    background-color: rgba(255, 255, 255, 0.29);
+    
+}
+
+#about {
+    background-color: #f2ae72;
+}
+
+.about-content-container {
+    height: 75%;
+    width: 85%;
+    margin: auto;
+    top: 10%;
+    position: relative;
+    background-image: linear-gradient(125deg, rgb(186, 54, 159), #f2ae72);
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+
+}
+.about-content-container:hover {
+    opacity: 1;
+}
+
+#together-container {
+    background-color: rgba(255, 255, 255, 0.46);
+    position: relative;
+    width: 95%;
+    height: 75%;
+    margin: auto;
+    top: 5%;
+    overflow: auto;
+}
+.about-content-container img {
+
+    width: 250px;
+    height: auto;
+    margin: 5% auto;
+    display: flex;
+    transition: 0.2s ease-out;
+}
+
+
+.about-info-container {
+    position: relative;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    height: auto;
+    padding: 5px;
+    font-size: 0.9 rem;
+    background-color: rgba(255, 255, 255, 0.46);
+    transition: 0.2s ease-out;
+} 
+.about-info-container:hover {
+   background-color: rgba(255, 255, 255, 0.65);
+}
+#gallery {
+    background-color: #f2e394;
+    overflow: hidden;
+}
+
+#photo-container {
+    position: relative;
+    margin: auto;
+    top: 10%;
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    background-color: rgba(0, 0, 0, 0.16);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+    width: 85vw;
+    height: 75%;
+    overflow: auto;
+    background-image: linear-gradient(125deg, rgba(186, 54, 159), #f7e378);
+}
+#photo-container:hover {
+    opacity: 1;
+}
+#photo-viewer {
+    position: relative;
+    height: 380px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.16);
+}
+#photo-viewer.is-loading:after {
+    content: "<i class="fas fa-spinner"></i>";
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#photo-viewer img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+}
+#thumbnails a.active {
+    opacity: 0.3;
+}
+#thumbnails a:hover {
+    opacity: 0.8;
+}
+#thumbnails {
+    position: relative;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 0;
+}
+    #thumbnails a img {
+        width: 100px;
+    }
+
+#menu {
+    background-color: #d96459;
+}
+
+#menu-container {
+    height: 75%;
+    width: 85%;
+    margin: auto;
+    top: 10%;
+    position: relative;
+    background-image: linear-gradient(125deg, rgb(186, 54, 159), #d96459);
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+    align-items: center;
+}
+#menu-container:hover {
+    opacity:1;
+}
+
+#menu-header {
+    margin: 20px 0 0 20px;
+    position: relative;
+    left: 5px;
+    font-size: 2.rem;
+    color: white;
+}
+
+#menu-form {
+    position: relative;
+    float: left;
+    display: flex;
+    margin: 30px 0 10px 20px;
+    font-size: 1.2rem;
+}
+
+select{
+    position: relative;
+    float: left;
+    font-size: 1.2rem;
+    width: 250px;
+    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #484f4f;
+    color: white;
+    border: white 2px solid;
+}
+
+#menu-options-container {
+    margin: 30px 10% 2px 10%;
+    display:flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    position: relative;
+    float: left;
+    width: 80%;
+    font-size: 2.5rem;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.29);
+    overflow: auto;
+}
+
+.bubble-tea-image {
+    width: 70px;
+    height: 150px;
+    margin: 14px 15px 0 15px;
+    display: flex;
+    transition: 0.2s ease-out;
+}
+.bubble-tea-image:hover {
+    transform: scale(1.05);
+}
+
+
+#location {
+    background-color: #484f4f;
+}
+#location-container {
+    height: 75%;
+    width: 85%;
+    margin: auto;
+    top: 10%;
+    position: relative;
+    background-image: linear-gradient(125deg, rgb(186, 54, 159), #484f4f);
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+    align-items: center;
+}
+#location-container:hover {
+    opacity: 1;
+}
+#maps-container {
+    position: relative;
+    top: 15%;
+    background-color: rgba(255, 255, 255, 0.29);
+    padding: 20px;
+}
+    iframe {
+        margin: auto;
+        width: 100%;
+        height: 250px;
+    }
+
+#hours-container {
+    position: relative;
+    color: white;
+    width: 400px;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+#map-text-container {
+    position: relative;
+    width: 85%;
+    top: 5%;
+    margin: auto;
+}
+#contact {
+    background-color: #588c7e;
+}
+
+#contact-container {
+    height: 75%;
+    width: 85%;
+    margin: auto;
+    top: 10%;
+    position: relative;
+    background-image: linear-gradient(125deg, rgb(186, 54, 159), #588c7e);
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+    align-items: center;
+}
+
+#contact-container:hover {
+    opacity:1;}
+
+#contact-header {
+    position: relative;
+    font-size: 2rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    top: 25%;
+}
+#logo-container {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+    top: 50%;
+    text-align: center;
+    font-size: 2rem;
+}
+#logo-container a {
+    padding: 0 5%;
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #484f4f;
+    color: white;
+}
+
+
+    #bubble-tea-description {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 2;
+        width: 300px;
+        height: 150px;
+        background-color: white;
+        opacity: 0.8;   
+    }
+    
+    #description-text {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 40px;
+    }
+    #close-description {
+        float: right;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+.menu-hidden {
+        display: none;
+    }
+.menu-visible {
+    display: block;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+@media (max-width: 600px) {
+  html, body {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+  
+    
+    html {
+    font-family: 'Raleway', sans-serif;
+    
+}
+header {
+    background-color: rgb(186, 54, 159);
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#logo {
+    float: left;
+    font-size: 2rem;
+    color: white;
+    width: auto;
+  
+    padding: 5px 0 5px 10px;
+
+}
+#logo a {
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+    #mobile-nav {
+        font-size: 2rem;
+        color: white;
+        float: right;
+        margin: 5px 10px 5px 5px;
+        cursor: pointer;
+        
+    }
+    
+nav {
+    top: 50px;
+    background-color: rgb(186, 54, 159);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin: auto;
+}
+ul {   
+    width: 100%;
+    padding: 0;
+    
+}
+li {
+    font-size: 2.5rem;
+    padding: 5%;
+    list-style-type: none;
+    text-align: center;
+    transition: 0.2s ease-out;
+    }
+nav li:active {
+    background-color: rgba(255, 250, 240, 0.42);
+    }
+    
+nav li:hover {
+    background-color: rgba(255, 250, 240, 0.42);
+    }
+
+nav li a {
+  display: block;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+
+    .hidden {
+        display: none;
+    }
+body, #content {
+    margin: 0;
+}
+
+
+.container {
+    width: 100%;
+    height: 600px;
+}
+#welcome {
+    background-image: url("https://i.ibb.co/sHsY77F/pastelle-blended-colours.jpg");
+    background-size: cover;
+    
+}
+
+
+.welcome-message-container {
+    align-self: center;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 25%;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.16);
+    transition: 0.5s ease-out;
+}
+.welcome-message-container:hover {
+    background-color: rgba(255, 255, 255, 0.29);
+    
+}
+
+#about {
+    background-color: #f2ae72;
+}
+
+.about-content-container {
+    height: 75%;
+    width: 85%;
+    margin: auto;
+    top: 10%;
+    position: relative;
+    background-image: linear-gradient(125deg, rgb(186, 54, 159), #f2ae72);
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+
+}
+.about-content-container:hover {
+    opacity: 1;
+}
+
+#together-container {
+    background-color: rgba(255, 255, 255, 0.46);
+    position: relative;
+    width: 95%;
+    height: 97%;
+    margin: auto;
+    top: 5px;
+    overflow: auto;
+}
+.about-content-container img {
+
+    width: 230px;
+    height: auto;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    transition: 0.2s ease-out;
+}
+
+
+.about-info-container {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    margin-top: 2px;
+    text-align: center;
+    height: auto;
+    padding: 0;
+    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.46);
+    transition: 0.2s ease-out;
+} 
+.about-info-container:hover {
+   background-color: rgba(255, 255, 255, 0.65);
+}
+#gallery {
+    background-color: #f2e394;
+}
+
+#photo-container {
+    position: relative;
+    margin: auto;
+    top: 10%;
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    background-color: rgba(0, 0, 0, 0.16);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+    width: 85%;
+    height: 75%;
+    overflow: auto;
+    background-image: linear-gradient(125deg, rgba(186, 54, 159), #f7e378);
+}
+#photo-container:hover {
+    opacity: 1;
+}
+#photo-viewer {
+    position: relative;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.16);
+}
+#photo-viewer.is-loading:after {
+    content: "<i class="fas fa-spinner"></i>";
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#photo-viewer img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+}
+#thumbnails a.active {
+    opacity: 0.3;
+}
+#thumbnails a:hover {
+    opacity: 0.8;
+}
+#thumbnails {
+    position: relative;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 0;
+}
+    #thumbnails a img {
+        width: 70px;
+    }
+
+#menu {
+    background-color: #d96459;
+}
+
+#menu-container {
+    height: 75%;
+    width: 85%;
+    margin: auto;
+    top: 10%;
+    position: relative;
+    background-image: linear-gradient(125deg, rgb(186, 54, 159), #d96459);
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+    align-items: center;
+}
+#menu-container:hover {
+    opacity:1;
+}
+
+#menu-header {
+    margin: 10px 0 0 10px;
+    position: relative;
+    left: 5px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#menu-form {
+    position: relative;
+    display: flex;
+    margin: 10px 0 0px 15px;
+    font-size: 1.1rem;
+}
+
+select{
+    position: relative;
+    font-size: 1.1rem;
+    width: 250px;
+    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+    background-color: #484f4f;
+    color: white;
+    border: white 2px solid;
+}
+
+#menu-options-container {
+    margin: 20px 10% 2px 10px;
+    display:flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    position: relative;
+    width: 95%;
+    font-size: 1.1rem;
+    height: 76%;
+    background-color: rgba(255, 255, 255, 0.29);
+    overflow: auto;
+}
+
+.bubble-tea-image {
+    width: 60px;
+    height: 120px;
+    margin: 10px 5px 0 10px;
+    display: flex;
+    transition: 0.2s ease-out;
+}
+.bubble-tea-image:hover, .bubble-tea-image:active {
+    transform: scale(1.05);
+}
+
+
+#location {
+    background-color: #484f4f;
+}
+#location-container {
+    height: 75%;
+    width: 85%;
+    margin: auto;
+    top: 10%;
+    position: relative;
+    background-image: linear-gradient(125deg, rgb(186, 54, 159), #484f4f);
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+    align-items: center;
+}
+#location-container:hover {
+    opacity: 1;
+}
+#maps-container {
+    position: relative;
+    top: 15%;
+    background-color: rgba(255, 255, 255, 0.29);
+    padding: 20px;
+}
+
+#hours-container {
+    position: relative;
+    color: white;
+    width: 90%;
+    font-size: 0.9rem;
+    margin: auto;
+    display: flex;
+}
+
+#map-text-container {
+    position: relative;
+    width: 85%;
+    top: 5%;
+    margin: auto;
+}
+#contact {
+    background-color: #588c7e;
+}
+  iframe {
+    width: 100%;
+    height: 250px;
+    margin: auto;
+  }
+#contact-container {
+    height: 75%;
+    width: 85%;
+    margin: auto;
+    top: 10%;
+    position: relative;
+    background-image: linear-gradient(125deg, rgb(186, 54, 159), #588c7e);
+    border: solid white 15px;
+    box-shadow: 15px 20px 8px -2px rgba(0, 0, 0, 0.44);
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+    align-items: center;
+}
+
+#contact-container:hover {
+    opacity:1;}
+
+#contact-header {
+    position: relative;
+    font-size: 1.5rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: white;
+    top: 20%;
+}
+#logo-container {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    top: 40%;
+    text-align: center;
+    font-size: 2rem;
+}
+#logo-container a {
+    padding: 0 5%;
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #484f4f;
+    color: white;
+}
+    
+    #bubble-tea-description {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 2;
+        width: 200px;
+        height: 100px;
+        background-color: white;
+        opacity: 0.8;   
+    }
+    
+    #description-text {
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+    #close-description {
+        float: right;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    
+    .menu-hidden {
+        display: none;
+    }
+.menu-visible {
+    display: block;
+    }
+}

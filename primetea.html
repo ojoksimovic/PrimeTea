@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0" />
+          <title>Prime Tea - BubbleTea</title>
+     <link href = "./primetea/style.css" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    </head>
+    <body>
+        <header>
+            <div id = "logo">
+                <a href = "#welcome">PrimeTea</a>
+            </div>
+            <nav id = "navigation" class = "hidden">
+                <ul id = "navigation-list" class = "hidden">
+                    <li><a href = "#about">About</a></li><li><a href = "#gallery">Gallery</a></li><li><a href = "#menu-header">Menu</a></li><li><a href = "#location">Location</a></li><li><a href = "#contact">Contact</a></li>
+                
+                </ul>
+            </nav>
+            <i id = "mobile-nav" class="fas fa-bars"></i>
+        
+        </header>
+        <div id = "content">
+            <div class = "container" id = "welcome"><div class = "welcome-message-container">
+                <h1 id = "text-welcome">Welcome to PrimeTea</h1>
+                <p id = "text-welcome2">St Lawrence Market's newest Bubble Tea Shop!</p>
+            </div>
+<!--                <div class = "arrow-container-welcome"><a class = "down-arrow" href = "#about"><i class="fas fa-chevron-down"></i></a></div>-->
+            </div>
+            <div class = "container" id = "about">
+                <div class = "about-content-container">
+                    <div id = "together-container">
+                    <img src = "./primetea/about-me.jpg">
+                <div class = "about-info-container">
+                    <h2>About our Small Batch Bubble Tea</h2><p>Experimenting with flavours has always been a big part of our lives. Using international flavours inspired by our Taiwanese ancestry, and a passion for excellence, our craft small batch bubble teas are made with care. Flavours always rotating!</p>
+                    </div>
+                        </div>
+                </div>
+<!--                <div class = "arrow-container-about"><a class = "down-arrow" href = "#gallery"><i class="fas fa-chevron-down"></i></a></div>-->
+            </div>
+            <div class = "container" id = "gallery">
+                <div id = "photo-container">
+                    
+
+                <div id = "photo-viewer">
+<!--
+                                    <a id = "left-arrow" href = ""><i class="fas fa-chevron-left"></i></a>
+                 <a id = "right-arrow" href = ""><i class="fas fa-chevron-right"></i></a>
+-->
+                    </div>
+                <div id = "thumbnails">
+                    <a href = "./primetea/Gallery/IMG_7785.JPG" class = "thumb active" title = "Holding PrimeTea2">
+                        <img src = "./primetea/Gallery/thumb-IMG_7785.jpg" alt = "Holding PrimeTea2"></a><a href = "./primetea/Gallery/IMG_7778.JPG" class = "thumb" title = "PrimeTea PassionFruit">
+                        <img src = "./primetea/Gallery/thumb-IMG_7778.jpg" alt = "PrimeTea PassionFruit"></a>
+                    <a href = "./primetea/Gallery/IMG_7762.JPG" class = "thumb" title = "PrimeTea Process">
+                        <img src = "./primetea/Gallery/thumb-IMG_7762.jpg" alt = "PrimeTea Process"></a>
+                    <a href = "./primetea/Gallery/IMG_20201013_190226.jpg" class = "thumb" title = "Holding PrimeTea">
+                        <img src = "./primetea/Gallery/thumb-IMG_20201013_190226.jpg" alt = "Holding PrimeTea"></a>
+                    <a href = "./primetea/Gallery/IMG_7761.JPG" class = "thumb" title = "Boba Pearls in Spoon">
+                        <img src = "./primetea/Gallery/thumb-IMG_7761%20copy.jpg" alt = "Boba Pearls in Spoon"></a>
+                    <a href = "./primetea/Gallery/IMG_7782.JPG" class = "thumb" title = "PrimeTea PassionFruit Cat">
+                        <img src = "./primetea/Gallery/thumb-IMG_7782%20copy.jpg" alt = "PrimeTea PassionFruit Cat"></a>
+                    <a href = "./primetea/Gallery/IMG_20201013_190340.jpg" class = "thumb" title = "Thumbs Up PrimeTea">
+                        <img src = "./primetea/Gallery/thumb-IMG_20201013_190340%20copy.jpg" alt = "Thumbs Up PrimeTea"></a>
+                    <a href = "./primetea/Gallery/IMG_7790.JPG" class = "thumb" title = "Boba Pearls Under Light">
+                        <img src = "./primetea/Gallery/thumb-IMG_7790%20copy.jpg" alt = "Boba Pearls Under Light"></a>
+                    </div>
+                </div>
+                    
+            </div>
+            
+            <div class = "container" id = "menu">
+            <div id = "menu-container">
+                <h1 id = "menu-header">Menu</h1>
+                <form id = "menu-form">
+                    <label id = "dropdown-label" for = "dropdown"></label>
+                    <select id = "dropdown" name = "dropdown">
+                        <option value = "" disabled >Choose a flavour!</option>
+                        <option id = "option-all" value = "all" selected>All</option>
+                        <option id = "option-fruity" value = "fruity">Fruity</option>
+                        <option id = "option-milky" value = "milky">Milky</option>
+                    </select>
+                </form>
+                <div id = "menu-options-container">
+                    <div id = "bubble-tea-description" class = "menu-hidden">
+                        <p id = "close-description">x</p>
+                        <p id = "description-text">Delicious choice!<br>More information coming soon!</p>
+                        </div>
+                <img class = "bubble-tea-image fruity" src = "./primetea/Gallery/bubble-tea-fruity1.png">
+                <img class = "bubble-tea-image milky" src = "./primetea/Gallery/bubble-tea-milky1.png">
+                <img class = "bubble-tea-image fruity" src = "./primetea/Gallery/bubble-tea-fruity2.png">
+                <img class = "bubble-tea-image fruity" src = "./primetea/Gallery/bubble-tea-fruity3.png">
+                <img class = "bubble-tea-image fruity" src = "./primetea/Gallery/bubble-tea-fruity4.png">
+                <img class = "bubble-tea-image fruity" src = "./primetea/Gallery/bubble-tea-fruity5.png">
+                <img class = "bubble-tea-image fruity" src = "./primetea/Gallery/bubble-tea-fruity6.png">
+                <img class = "bubble-tea-image milky fruity" src = "./primetea/Gallery/bubble-tea-milky-fruity1.png">
+                <img class = "bubble-tea-image milky fruity" src = "./primetea/Gallery/bubble-tea-milky-fruity2.png">
+                <img class = "bubble-tea-image milky" src = "./primetea/Gallery/bubble-tea-milky2.png">
+                   
+                </div>
+            
+                </div>
+            </div>    
+            <div class = "container" id = "location">
+                        <div id = "location-container">
+                            <div id = "map-text-container">
+                <div id = "maps-container">
+                    <iframe
+                            width="500"
+                            height="400"
+                            frameborder="0" style="border:0"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDlRdZb3KBpkb_dVc14Fn39W60PyUZtaO4
+                            &q=St.+Lawrence+Market,Toronto" allowfullscreen>
+                    </iframe></div>
+                            <div id = "hours-container">
+                    <h2>Try Us!</h2>
+                    <p>123 Front Street East<br>Toronto, ON</p>
+                    <p><strong>Hours</strong><br>Mon-Fri 5pm-8pm<br>Sat-Sun 12pm-5pm</p>
+                    <p>416-999-9999</p>
+                            </div>
+                                </div>
+            
+                </div>
+            </div>    
+            <div class = "container" id = "contact">
+            <div id = "contact-container"> 
+                <div id = "contact-header"><h1>Questions?</h1><h4>Get in touch.</h4></div>
+                <div id = "logo-container">
+                    <a href = "www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href = "www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href = "mailto:olivera2391@gmail.com"><i class="far fa-envelope"></i></a>
+                <a href = "Tel: 416-999-9999"><i class="fas fa-phone"></i></a>
+                </div></div>
+            </div>    
+        </div>
+    <footer><p>created by olivera.tech</p></footer>        
+    <script src ="./primetea/jquery-3.5.1.js" type="text/javascript"></script>
+        <script src = "./primetea/script.js"></script>
+    </body>
+</html>
